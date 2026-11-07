@@ -111,6 +111,8 @@ main > section.journal:last-child { padding-bottom: clamp(72px, 9vw, 112px); }
 /* ---- Posts: shared by the Experience cards and Research ---- */
 .post-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: var(--ink-3); font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; }
 .tag { padding: 0 8px; border-radius: 999px; background: var(--paper-3); color: var(--ink-3); font-size: 12px; line-height: 20px; }
+button.tag, a.tag { border: 0; font-family: inherit; font-weight: 500; cursor: pointer; transition: background .15s, color .15s; }   /* 分类标签：点了按分类筛选 */
+button.tag:hover, a.tag:hover { background: var(--mint); color: var(--mint-ink); }
 .post-title { margin: 6px 0 8px; font-size: 22px; font-weight: 600; line-height: 1.25; letter-spacing: -.01em; }
 .post-title a { transition: color .15s; }
 .post-title a:hover { color: var(--accent); }

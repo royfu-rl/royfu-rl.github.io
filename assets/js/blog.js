@@ -20,5 +20,10 @@
   }
 
   buttons.forEach(b => b.addEventListener('click', () => show(b.dataset.f)));
+  // the tag next to each post's date filters by that topic
+  document.querySelectorAll('.post-row .tag').forEach(t => t.addEventListener('click', () => {
+    show(t.dataset.f);
+    document.querySelector('.blog-tabs').scrollIntoView({behavior: 'smooth', block: 'start'});
+  }));
   show(decodeURIComponent(location.hash.slice(1)) || 'all');
 })();

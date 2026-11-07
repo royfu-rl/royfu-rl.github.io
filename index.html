@@ -7,7 +7,7 @@
 <meta name="description" content="Roy, algorithm engineer at Kling AI working on Agentic RL for Kling-VLM and KAT-Coder.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/site.css?v=5ba6da6b">
 </head>
 <body data-active="home">
 
@@ -45,24 +45,6 @@
         </ul>
       </aside>
     </div>
-  </div>
-</section>
-
-<section class="journal" id="background">
-  <div class="page">
-    <div class="sec-head"><h2 class="sec-title">Background</h2></div>
-    <ul class="log">
-      <li><span class="date">Apr 2026</span><span>Joined <a href="https://klingai.com/" target="_blank" rel="noopener">Kling AI</a>, Foundation Algorithms, working on Kling-VLM and KAT-Coder.</span></li>
-      <li class="year-start"><span class="date">Jun 2024</span><span>Joined <a href="https://www.meituan.com/" target="_blank" rel="noopener">Meituan</a>, Core Local Commerce, as an algorithm engineer.</span></li>
-      <li><span class="date">Jun 2024</span><span>Received M.S. from the USTC School of AI. Research: multi-agent, offline and distributed RL.</span></li>
-      <li><span class="date">2024</span><span>NeurIPS AutoBidding competition: final round, 22 of 731.</span></li>
-      <li class="year-start"><span class="date">Apr 2023</span><span>RL intern at Tencent IEG, TiMi, until October: <a href="https://my.feishu.cn/docx/VE1Jd40pVouvCBxalZNcwFbYnYc" target="_blank" rel="noopener">game AI</a> and <a href="https://my.feishu.cn/docx/RECvdO9MPo5tWVxQEy1c65N5nwg" target="_blank" rel="noopener">NPC preference alignment</a>.</span></li>
-      <li class="year-start"><span class="date">Sep 2022</span><span>RL intern at inspir.ai, until January: <a href="https://my.feishu.cn/docx/TIqkdF7s4oCu1jxbw6RcEl1NnWg" target="_blank" rel="noopener">MineCLIP</a>, a pretrained text-video reward model for decision making.</span></li>
-      <li><span class="date">2022</span><span>NeurIPS <a href="https://my.feishu.cn/docx/JMc4dtWVhoOJdDx1ydYcvj2jn6f" target="_blank" rel="noopener">Neural MMO</a> competition: PvP track 2nd, PvE track 4th.</span></li>
-      <li><span class="date">2022</span><span>ToG 3D FPS competition: Navigation track 1st.</span></li>
-      <li><span class="date">2022</span><span>IJCAI Mahjong AI competition: 19th.</span></li>
-      <li class="year-start"><span class="date">Sep 2021</span><span>Started M.S. in Computer Science at USTC.</span></li>
-    </ul>
   </div>
 </section>
 
@@ -159,6 +141,74 @@
   </div>
 </section>
 
+<section class="journal" id="blog">
+  <div class="page">
+    <div class="sec-head">
+      <h2 class="sec-title">Blog</h2>
+      <a class="sec-more" href="blog.html">All posts</a>
+    </div>
+    <!-- blog:start（生成，别手改：interview/blog/scripts/build_site_blog.py；篇目 = feishu/blurbs.json 里 home:true） -->
+    <div class="post-grid">
+      <article class="post-card">
+        <div class="post-meta"><span>Mar 2026</span><a class="tag" href="blog.html#algorithm/agentic-rl">Agentic RL</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/Ds23dCeM0oqLKNxSoy0cGDbtnug" target="_blank" rel="noopener">Making Agentic RL Faster</a></h3>
+        <p class="post-desc">Making agentic RL faster: long-tail rollouts, quantization, KV cache, DP-aware routing, speculative decoding, dynamic batching, fully async training and partial rollout.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Mar 2026</span><a class="tag" href="blog.html#algorithm/agentic-rl">Agentic RL</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/QgzAd0SVuou9bfxWCPQcIwDhnoh" target="_blank" rel="noopener">Making Agentic RL Stable</a></h3>
+        <p class="post-desc">Keeping agentic RL stable: train-infer mismatch, chunk-level credit assignment, environment instance filtering, and the metrics worth watching.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Feb 2026</span><a class="tag" href="blog.html#infra/rl-framework">RL Framework</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/TMZ3dU0dvokHGZxM23Fc9BevnPf" target="_blank" rel="noopener">A Source-Code Walkthrough of verl</a></h3>
+        <p class="post-desc">A source-code walkthrough of verl&#x27;s PPO trainer, from run_ppo() and worker initialization to how data flows through rollout and training.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Feb 2026</span><a class="tag" href="blog.html#infra/train-engine">Train Engine</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/UtYSdIr22oGstUxECitcQmuOn8i" target="_blank" rel="noopener">DeepSpeed ZeRO and Ulysses, Explained</a></h3>
+        <p class="post-desc">ZeRO stages 1 to 3, ZeRO-R and offloading, read as memory-saving data parallelism, plus DeepSpeed Ulysses sequence parallelism.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Feb 2026</span><a class="tag" href="blog.html#infra/rl-framework">RL Framework</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/FOk1dMs9MoQX8WxAuIscJh5dn0g" target="_blank" rel="noopener">Inside slime: Data Buffers and Async Agentic RL</a></h3>
+        <p class="post-desc">How slime&#x27;s data buffer and environment abstraction decouple rollout from training, and how it supports async RLVR and multi-turn agentic RL.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Feb 2026</span><a class="tag" href="blog.html#infra/train-engine">Train Engine</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/ZzAIdUewdoAyQWxLVZRcHUwOnvc" target="_blank" rel="noopener">Parallelism in Megatron-LM</a></h3>
+        <p class="post-desc">The Megatron-LM papers and code: tensor, pipeline, sequence, context and expert parallelism, MoE parallel folding, and the matching verl settings.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Feb 2026</span><a class="tag" href="blog.html#algorithm/rlvr-post-train">RLVR &amp; Post-Train</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/FW34d05OBouqzExcBDwcQY3on9g" target="_blank" rel="noopener">The Training-Inference Mismatch in RL</a></h3>
+        <p class="post-desc">Why rollout and training engines disagree on token probabilities, worst on MoE models, and fixes such as truncated importance sampling, IcePop and rollout routing replay.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Jan 2026</span><a class="tag" href="blog.html#algorithm/rlvr-post-train">RLVR &amp; Post-Train</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/NL19dLyjXochYYxAdkUch4GBngf" target="_blank" rel="noopener">On-Policy vs Off-Policy Post-Training</a></h3>
+        <p class="post-desc">Where SFT, DPO, rejection sampling, RL and on-policy distillation sit between on-policy and off-policy, and what that means for post-training.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Jan 2026</span><a class="tag" href="blog.html#algorithm/rlvr-post-train">RLVR &amp; Post-Train</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/DcXadrwcgo1xIixCZsocwLtOnAc" target="_blank" rel="noopener">Reward Systems for Post-Training</a></h3>
+        <p class="post-desc">Rule-based, discriminative and generative reward models, rubrics as rewards, pointwise vs pairwise training, and reward hacking.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Sep 2023</span><a class="tag" href="blog.html#projects/talk">Talk</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/RECvdO9MPo5tWVxQEy1c65N5nwg" target="_blank" rel="noopener">RLHF in 2023: From InstructGPT to DPO</a></h3>
+        <p class="post-desc">The 2023 talk version of the RLHF notes: InstructGPT&#x27;s three stages, DPO, Decision Transformer for RLHF and offline RLHF.</p>
+      </article>
+      <article class="post-card">
+        <div class="post-meta"><span>Jun 2023</span><a class="tag" href="blog.html#algorithm/imitation-learning">Imitation Learning</a></div>
+        <h3 class="post-title"><a href="https://my.feishu.cn/docx/MiHjdJAhfok9a1x3Ai2cMWBxnQf" target="_blank" rel="noopener">Imitation Learning as Distribution Matching</a></h3>
+        <p class="post-desc">Behavior cloning, inverse RL and GAIL, unified as matching either the policy or the state-action distribution of the expert.</p>
+      </article>
+    </div>
+    <!-- blog:end -->
+  </div>
+</section>
+
 <section class="journal" id="contact">
   <div class="page">
     <div class="sec-head"><h2 class="sec-title">Contact</h2></div>
@@ -176,8 +226,8 @@
 
 <div id="site-footer"></div>
 
-<script src="assets/js/site.js"></script>
-<script src="assets/js/swarm.js"></script>
-<script src="assets/js/film.js"></script>
+<script src="assets/js/site.js?v=3c889df4"></script>
+<script src="assets/js/swarm.js?v=55a91ac2"></script>
+<script src="assets/js/film.js?v=27feef33"></script>
 </body>
 </html>
