@@ -126,6 +126,7 @@ main > section.journal:last-child { padding-bottom: clamp(72px, 9vw, 112px); }
 .post-grid.exp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .post-card { display: flex; flex-direction: column; min-width: 0; }
 .post-card .post-title { margin: 6px 0; font-size: 20px; }
+.soon:not(.cta) { align-self: flex-start; margin-top: 10px; padding: 0 10px; border-radius: 999px; background: var(--paper-3); color: var(--ink-3); font-size: 12px; font-weight: 600; line-height: 22px; }
 .exp-grid .post-meta { margin-top: 12px; }
 
 .page-hero { padding-top: clamp(40px, 6vw, 72px); }
@@ -247,6 +248,7 @@ main > section.journal:last-child { padding-bottom: clamp(72px, 9vw, 112px); }
 .cta span { transition: transform .25s; }
 .cta:hover span, .cta:focus-visible span { transform: translateX(5px); }
 .exp.live .cta { pointer-events: auto; }
+.cta.soon { border: 1px solid var(--c); background: transparent; color: var(--c); cursor: default; }   /* not public yet */
 /* The whole stage opens the active chapter's blog */
 .exp.live .cta::after { content: ''; position: absolute; inset: 0; cursor: pointer; }
 
